@@ -6,14 +6,15 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+//region Helper functions
 const getRandomInt = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
-//  return Math.floor(
-//      Math.random() * (Math.floor(max) - Math.ceil(min) + Math.ceil(min))
-//  );
 }
+//endregion
+
+
 
 console.log('Tabeller att öva på är:');
 
